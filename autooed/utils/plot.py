@@ -69,3 +69,4 @@ def plot_performance_metric(Y, obj_type):
     else:
         raise Exception(f'Invalid objective dimension {Y.shape[1]}')
     plt.show()
+

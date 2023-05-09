@@ -18,7 +18,7 @@ def get_general_args(args=None):
     '''
     parser = ArgumentParser()
     # Kia: here I changed the default to another problem with only one objective then I will modify that file.
-    parser.add_argument('--problem', type=str, default='Ackley2D', 
+    parser.add_argument('--problem', type=str, default='DTLZ2', 
         help='optimization problem')
     parser.add_argument('--algo', type=str, default='tsemo',
         help='type of algorithm to use with some predefined arguments, or custom arguments')
@@ -29,7 +29,7 @@ def get_general_args(args=None):
         help='size of the batch in optimization')
     parser.add_argument('--n-init-sample', type=int, default=5, 
         help='number of initial design samples')
-    parser.add_argument('--n-total-sample', type=int, default=10, 
+    parser.add_argument('--n-total-sample', type=int, default=8, 
         help='number of total design samples (budget)')
 
     args, _ = parser.parse_known_args(args)

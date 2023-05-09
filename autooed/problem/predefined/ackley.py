@@ -28,11 +28,11 @@ class Ackley(Problem):
 class Ackley2D(Ackley):
 
     config = {
-        'type': 'integer',
+        'type': 'continuous',
         'n_var': 4,
         'n_obj': 1,
-        'var_lb': 0,
-        'var_ub': 5,
+        'var_lb': -32.768,
+        'var_ub': 32.768,
     }
 
 
